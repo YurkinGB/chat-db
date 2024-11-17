@@ -10,33 +10,6 @@ api = '7658059209:AAGs2TyqlQCo6J9nAyUr75mbKABzbv6b_G0'
 bot = Bot(token=api)
 dp = Dispatcher(bot, storage=MemoryStorage())
 
-# kb = ReplyKeyboardMarkup(resize_keyboard=True)
-# calculation_bt = KeyboardButton(text='Рассчитать')
-# info_bt = KeyboardButton(text='Информация')
-# kb.add(calculation_bt)
-# kb.add(info_bt)
-
-# cursor.execute('''
-# CREATE TABLE IF NOT EXISTS Users(
-# id INTEGER PRIMARY KEY,
-# username TEXT NOT NULL,
-# email TEXT NOT NULL,
-# age INTEGER,
-# balance INTEGER NOT NULL)''')
-#
-# for i in range(1, 11):
-#     cursor.execute("INSERT INTO Users(username, email, age, balance) VALUES (?, ?, ?, ?)",
-#                    (f"user{i}", f"example{i}@gmail.com", i*10, 1000))
-#
-# for i in range(1, 11):
-#     if i % 2 == 0:
-#         cursor.execute("UPDATE Users SET balance = ? WHERE id = ?", (500, i))
-#
-# for i in range(1, 11):
-#     if i % 3 == 0:
-#         cursor.execute("DELETE From Users WHERE id = ?", (i,))
-
-
 initiate_db()
 
 kb = ReplyKeyboardMarkup(
